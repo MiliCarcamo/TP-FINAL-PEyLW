@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="css/style-index.css">
+
+    <title>Alojamientos Bariloche</title>  
+</head>
+
+<body>
+    <header class="cabecera">
+        <nav class="barra_nav">
+            <div>
+                <a href="index.html"> <img src="../Trabajo-Practico-Final-de-PEyLW/images/logo.png" class="logo" alt="Logo"></a>
+            </div>
+            <ul class="menu">
+                <!--Aca agrego todos los items del menu-->
+                <li><a href="index.html" class="color_menu">Inicio</a></li>
+                <li><a href="pages/alojamientos.html" class="color_menu">Alojamientos</a></li>
+                <li><a href="pages/contactanos.html" class="color_menu">Contactanos</a></li>
+                <li><a href="pages/actividades.html"  class="color_menu">Actividades</a></li>
+                <li><a href="pages/nosotros.html"  class="color_menu">Nosotros</a></li>
+                <li><a href="pages/ubicacion.html"  class="color_menu">Ubicacion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br>
+
+    <main>
+
+        <!-- ********** CARRUSEL Index********** -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/carrusel-index/1.jpg"  class="img_carrusel_index d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carrusel-index/2.jpg" class="img_carrusel_index d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carrusel-index/3.jpg" class="img_carrusel_index d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carrusel-index/4.jpg" class="img_carrusel_index d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div><br><br><br>
+        <!-- ********** FIN CARRUSEL ********** -->
+
+        <body>
+            <!-- cuenta regresiva -->
+            <div class="oferta_imperdible">
+                <h3>Oferta Imperdible:</h3>
+                Alquilando cualquiera de nuestros alojamientos minimo 3 noches, te damos una mas de regalo!!! <br><br>
+                Finaliza en:
+            </div>     
+            <div id="reloj"></div>
+            <script src="./js/cuentaRegresiva.js"></script>
+        </body>
+
+        <br><br><br>
+
+        <div class="texto_titulos">
+            Destacados <br>
+        </div>
+            
+
+        <div class="deptos_destacados">
+            <div class="cajas_deptos ">
+                <!--Deptos desatacado 1-->
+                <a href="./pages/alojamientos.html"><img class="fotos_destacados" src="./images/index- deptos-destacados/casa1.jpg" alt="Depto 1" height="350" width="350"></a>
+                <div class="texto_destacadas">
+                    <a href="./pages/alojamientos.html"><h3>Departamento "Bella Vista"</h3></a><br>
+                </div>
+                
+                <ul>
+                    <li>✓ Para 2 personas.</li>
+                    <li>✓ Ubicado a 500m del centro. </li>
+                    <li>✓ Incluye todos los servicios.</li>
+                </ul>
+
+            </div> <br><br><br><br>
+
+            <div class="cajas_deptos">
+                <!--Dpto destacado 2-->
+                <a href="./pages/alojamientos.html"><img class="fotos_destacados" src="./images/index- deptos-destacados/casa2.jpg" alt="Depto 2" height="350" width="350"></a>
+                
+                <div class="texto_destacadas">
+                    <a href="./pages/alojamientos.html"><h3>Departamento "Bosque encantado"</h3></a> <br>
+                </div>
+                <ul>
+                    <li>✓ Para 5 personas, con posibilidad de hasta 6.</li>
+                    <li>✓ Ubicado a 11km del centro.</li>
+                    <li>✓ Incluye todos los servicios.</li>
+                </ul>
+            </div> <br><br><br><br>
+
+            <div class="cajas_deptos">
+                <!--Dpto destacado 3-->
+                <a href="./pages/alojamientos.html"><img class="fotos_destacados" src="./images/index- deptos-destacados/casa3.jpg" alt="Depto 3" height="350" width="350"></a>
+                <div class="texto_destacadas">
+                    <a href="./pages/alojamientos.html"><h3>Departamento "Bosque encantado 2"</h3></a> <br>
+                </div>
+                
+                <ul>
+                    <li>✓ Para 6 personas, con posibilidad de hasta 10.</li>
+                    <li>✓ Ubicado a 11km del centro.</li>
+                    <li>✓ Incluye todos los servicios.</li>
+                </ul>                
+            </div><br><br><br><br>
+        </div><br><br><br><br>
+    </main>
+
+
+    <!--Aca va la informacion del pie de pagina-->
+    <footer class="pie_pagina">
+        <div class="texto_redes">
+            Seguinos en nuestras redes <br><br>
+        </div>
+       
+        <div class="iconos_redes">
+            <a href="https://facebook.com"> <img src="images/iconos-redes/facebook.png" alt="Icono de Facebook" class="tamanio_iconos_redes"></a>
+            <a href="https://instagram.com"> <img src="images/iconos-redes/instagram.png" alt="Icono de Instagram" class="tamanio_iconos_redes"></a>
+            <a href="https://twitter.com"> <img src="images/iconos-redes/twitter.png" alt="Icono de Twitter" class="tamanio_iconos_redes"></a>
+        </div><br><br><br><br>
+
+        <div class="pie Pagina">
+            <div>
+                <div>
+                    <h2>Contáctanos</h2><br><br>
+                </div>
+                
+                <ul>
+                    <li>San Martin 460, San Carlos de Bariloche, Argentina</li>
+                    <li>+54 299 5070405</li>
+                    <li>alojamientosbariloche45@gmail.com</li>
+                </ul>
+            </div>
+        </div><br><br><br>
+        
+
+        <!--<div class="pie Pagina">
+            <div>
+                <h2>Enlaces Rápidos</h2> <br>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+
+        </div> -->
+
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+</body>
+</html>

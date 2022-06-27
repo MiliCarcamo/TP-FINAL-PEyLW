@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./../css/style-index.css">
+    <title>Alojamientos Bariloche - Contactanos</title>
+</head>
+<body>
+    <!--En el header se encuentra lo que serian las opciones del menu-->
+    <header class="cabecera">
+        <nav class="barra_nav">
+            <div>
+                <a href="../index.html"> <img src="../images/logo.png" class="logo" alt="Logo"></a>
+            </div>
+            <ul class="menu">
+                <!--Aca agrego todos los items del menu-->
+                <li><a href="./../index.html" class="color_menu">Inicio</a></li>
+                <li><a href="alojamientos.html" class="color_menu">Alojamientos</a></li>
+                <li><a href="contactanos.html" class="color_menu">Contactanos</a></li>
+                <li><a href="actividades.html" class="color_menu">Actividades</a></li>
+                <li><a href="nosotros.html" class="color_menu">Nosotros</a></li>
+                <li><a href="ubicacion.html" class="color_menu">Ubicacion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Aca va la informacion del formulario de contacto-->
+    <main class="contactanos">
+        <form action="">
+            <div>
+                <div class="titulo_contactanos">
+                    Contactanos. <br><br>
+                </div>
+                
+                Nombre y Apellido:
+                <input type="text" name="nombreApellido"  placeholder="Nombre y Apellido" class="ingreso_informacion">
+            </div><br>
+            <div>
+                Total de personas que se van a hospedar:
+                <input type="number" name="cantPersonas" min="1" placeholder="Cantidad de personas" class="ingreso_informacion">
+            </div><br>
+            <div>
+                Fecha de ingreso:
+                <input type="date" name="fechaIngreso" placeholder="Escriba Aqui" class="ingreso_informacion">
+            </div><br>
+            <div>
+                Fecha de salida:
+                <input type="date" name="fechaSalida" placeholder="Escriba Aqui" class="ingreso_informacion">
+            </div><br>
+            <div>
+                Seleccione el medio de contacto, por el cual quiere recibir la informacion:
+                <select name="Medio de contacto" id="" class="ingreso_informacion">
+                    <option >Seleccione</option>
+                    <option >Email</option>
+                    <option >WhatsApp</option>
+                </select>
+            </div><br>
+            <div>
+                Comentario o Mensaje: <br>
+                <textarea name="mensaje" id="" cols="40" rows="10" class="ingreso_informacion" placeholder="Escribe un mensaje o comentario"></textarea>
+            </div> <br>
+            <div>
+                <input type="submit" value="Enviar" class="ingreso_informacion">
+                <input type="reset" value="Borrar" class="ingreso_informacion">
+            </div>
+        </form>
+
+    </main>
+
+    <!--Aca va la informacion del pie de pagina-->
+    <footer class="pie_pagina">
+        <br><br><br><br>
+        <div class="iconos_redes">
+            <a href="https://facebook.com"> <img src="../images/iconos-redes/facebook.png" alt="Icono de Facebook" class="tamanio_iconos_redes"></a>
+            <a href="https://instagram.com"> <img src="../images/iconos-redes/instagram.png" alt="Icono de Instagram" class="tamanio_iconos_redes"></a>
+            <a href="https://twitter.com"> <img src="../images/iconos-redes/twitter.png" alt="Icono de Twitter" class="tamanio_iconos_redes"></a>
+        </div><br><br><br><br>
+        
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,261 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #f08256;
+    background-image: linear-gradient(315deg, #f08256 0%, #f9b098 74%); 
+
+}
+
+/***********Logo*********/
+.logo{
+    width: 200px;
+    border-radius: 30px;
+}
+
+/***********Barra de navegacion - Menu **********/
+.barra_nav {
+    width:95%;
+    margin: auto;
+    padding: 30px 0px ; /*El 1ro marca el margen interior de arriba y abajo. el 2 es sobre los costados (derecha, izq)*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.color_menu{
+    color: red;
+}
+
+.barra_nav li{
+    display: inline-block;
+    /* ESTA DE ABAJO tambien es para poner el menu en linea */
+    /* float: left; */
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15%;
+}
+
+.barra_nav li a{
+    text-decoration:none;
+    margin: 0px 5px ;
+    font-size: 20px;
+}
+
+.barra_nav li:hover{ 
+    background-color:#f09f80;
+}
+
+.barra_nav li a:hover{
+    color: yellow;
+}
+
+li {
+    list-style-type: none;
+}
+
+/***** Carrusel index *****/
+.img_carrusel_index{
+    height: 449px;
+
+}
+
+/*************Seccion de dptos destacados index *************/
+.oferta_imperdible{
+    text-align: center;
+    color:rgb(56, 24, 1);
+    font-size: 25px;
+    margin: 10px 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    
+}
+.oferta_imperdible h3{
+    font-family: cursive;
+    font-weight: 800;
+    color: black;
+    font-style:italic;
+}
+
+#reloj{
+    font-size: 50px;
+    font-weight: 500 ;
+    text-align: center;
+    margin: 0px 420px;
+    color: white;
+    background-color: rgb(255, 11, 11);
+    border: solid 10px #f57d7d;
+    border-radius: 20px;
+    border-style:hidden;
+    box-shadow: 8px 8px 25px 8px #ff3737;
+  }
+
+
+/***** Carrusel index *****/
+.img_carrusel_index{
+    height: 449px;
+
+}
+
+.deptos_destacados{
+    display: flex;
+    justify-content: space-around ;
+}
+
+.cajas_deptos{
+    width: 420px;
+    height: auto;
+    background: white;
+    color: black;
+    text-decoration:solid;
+    padding: 15px 5px 15px 5px;
+    text-align: center;
+    border-top: solid 2px #f38b61;
+    border-right: solid 2px #f38b61;
+    border-left: solid 2px #f38b61;
+    border-bottom: solid 2px #f38b61;
+    margin: 30px;
+    border-radius: 15px;
+    /* Para ponerle sombra a las cajas de deptos destacados */
+    box-shadow: 8px 8px 25px 8px #d43f3f;
+    font-size: 23px;
+}
+
+.cajas_deptos a{
+    text-decoration:none;
+    color: black;
+}
+
+
+.fotos_destacados{
+    border-top: solid 2px #f57d7d;
+    border-bottom: solid 2px #f57d7d;
+    border-left: solid 2px #f57d7d;
+    border-right: solid 2px #f57d7d;
+    border-radius: 15px;
+}
+.texto_destacadas{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cajas_deptos ul li{
+    text-align: center;
+    margin-right:27px;
+}
+
+
+/********** FOOTER **********/
+
+.texto_redes{
+    text-align: center;
+    color: rgb(151, 20, 20);
+    font-weight: 600;
+    font-size: 30px;
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.iconos_redes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tamanio_iconos_redes{
+    width: 35px;
+    height: 35px;
+}
+
+/************* Seccion pages Alojamientos *************/
+/* .departamentos{
+   margin: 0px 250px;
+   padding: 100px
+    
+} BORRAR  */
+
+.info_deptos{
+    margin: 10px 250px;
+    
+}
+.texto_titulos{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(151, 20, 20);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.img_carusel_aloj{
+    height: 350px;
+    width: 350px;   
+}
+
+
+/************* Seccion pages Contactanos *************/
+.titulo_contactanos{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.contactanos{
+    font-size: 22px;
+    padding: 60px 70px;
+    background-color: rgb(248, 224, 192);
+    background: url(./../images/bariloche5.jpg) no-repeat center fixed;
+    /*background-size: Cambia el tamaño de la imagen para adaptarse a toda la caja */
+	background-size: cover;
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+}
+
+.ingreso_informacion{
+    font-size:18px;
+}
+
+
+/************* Seccion pages Actividades *************/
+
+
+
+
+
+/************* Seccion pages Nosotros *************/
+.texto_nosotros{
+    text-align:justify ;
+    margin: 10px 180px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.texto_nosotros h3{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+}
+
+.nosotros{
+    text-align: center;
+}
+
+/************* Seccion pages Ubicacion *************/
+.mapa_ubicacion{
+    margin: 10px 250px;
+    width: 800px;
+    height: 500px;
+}
+
+.texto_ubicacion{
+    margin: 10px 250px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
