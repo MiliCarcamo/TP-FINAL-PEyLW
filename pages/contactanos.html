@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./../css/style-index.css">
     <title>Alojamientos Bariloche - Contactanos</title>
+
+    <script src="./../js/formulario.js"></script>
 </head>
 <body>
     <!--En el header se encuentra lo que serian las opciones del menu-->
@@ -27,7 +29,70 @@
     </header>
 
     <!--Aca va la informacion del formulario de contacto-->
-    <main class="contactanos">
+    <main>
+        
+        <form id="form">
+            <div class="titulo_contactanos">
+                Contactanos
+            </div><br>
+            <label>Nombre</label>
+            <input type="text" name="Nombre" id="nombre" class="ingreso_informacion"><br><br>
+    
+            <label>Apellido</label>
+            <input type="text" name="Apellido" id="apellido" class="ingreso_informacion"><br><br>
+        
+            <label >Fecha de Ingreso:</label><br>
+            <label> Dia:</label> 
+            <input type="number" id="dia1" class="ingreso_informacion">
+            <label>mes: </label>
+            <select id="mes1" class="ingreso_informacion">
+                <option value="mes">Mes</option>
+                <option value="enero">enero</option>
+                <option value="febrero">febrero</option>
+                <option value="marzo">marzo</option>
+                <option value="abril">abril</option>
+                <option value="mayo">mayo</option>
+                <option value="junio">junio</option>
+                <option value="julio">julio</option>
+                <option value="agosto">agosto</option>
+                <option value="septiembre">septiembre</option>
+                <option value="octubre">octubre</option>
+                <option value="noviembre">noviembre</option>
+                <option value="diciembre">diciembre</option>
+            </select>
+            <label>año</label><input type="number" id="anio1" class="ingreso_informacion" ><br><br>
+        
+            <label >Fecha de Salida:</label><br>
+            <label> Dia:</label> <input type="number" id="dia2" class="ingreso_informacion">
+            <label>mes: </label>
+            <select id="mes2" class="ingreso_informacion">
+                <option value="mes">Mes</option>
+                <option value="enero">enero</option>
+                <option value="febrero">febrero</option>
+                <option value="marzo">marzo</option>
+                <option value="abril">abril</option>
+                <option value="mayo">mayo</option>
+                <option value="junio">junio</option>
+                <option value="julio">julio</option>
+                <option value="agosto">agosto</option>
+                <option value="septiembre">septiembre</option>
+                <option value="octubre">octubre</option>
+                <option value="noviembre">noviembre</option>
+                <option value="diciembre">diciembre</option>
+            </select>
+            <label>año</label><input type="number" id="anio2" class="ingreso_informacion" ><br><br>
+        
+            <label>Email</label> <input type="email" name="email" id="email" class="ingreso_informacion"> <br><br>
+    
+            <button id="boton_enviar" type="submit" onclick="verificarDatos(event)">ENVIAR</button>
+    
+        </form>
+    </main>
+    
+    
+    
+    
+    <!-- <main class="contactanos">
         <form action="">
             <div>
                 <div class="titulo_contactanos">
@@ -35,7 +100,7 @@
                 </div>
                 
                 Nombre y Apellido:
-                <input type="text" name="nombreApellido"  placeholder="Nombre y Apellido" class="ingreso_informacion">
+                <input type="text" id="nombreApellido" name="nombreApellido"  placeholder="Nombre y Apellido" class="ingreso_informacion">
             </div><br>
             <div>
                 Total de personas que se van a hospedar:
@@ -51,7 +116,7 @@
             </div><br>
             <div>
                 Seleccione el medio de contacto, por el cual quiere recibir la informacion:
-                <select name="Medio de contacto" id="" class="ingreso_informacion">
+                <select name="Medio de contacto" id="medioContacto" class="ingreso_informacion">
                     <option >Seleccione</option>
                     <option >Email</option>
                     <option >WhatsApp</option>
@@ -62,12 +127,13 @@
                 <textarea name="mensaje" id="" cols="40" rows="10" class="ingreso_informacion" placeholder="Escribe un mensaje o comentario"></textarea>
             </div> <br>
             <div>
-                <input type="submit" value="Enviar" class="ingreso_informacion">
+                <input type="submit" onclick="return enviarFormulario();" value="Enviar" class="ingreso_informacion">
                 <input type="reset" value="Borrar" class="ingreso_informacion">
             </div>
         </form>
+        <div id="error"></div>
 
-    </main>
+    </main> -->
 
     <!--Aca va la informacion del pie de pagina-->
     <footer class="pie_pagina">

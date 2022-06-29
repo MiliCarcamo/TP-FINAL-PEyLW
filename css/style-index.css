@@ -11,6 +11,10 @@ body {
 
 }
 
+header{
+    background: #ffdb9e;
+}
+
 /***********Logo*********/
 .logo{
     width: 200px;
@@ -88,12 +92,12 @@ li {
     font-weight: 500 ;
     text-align: center;
     margin: 0px 420px;
-    color: white;
-    background-color: rgb(255, 11, 11);
+    color: black;
+    background-color: #fce148;
     border: solid 10px #f57d7d;
     border-radius: 20px;
     border-style:hidden;
-    box-shadow: 8px 8px 25px 8px #ff3737;
+    box-shadow: 8px 8px 25px 8px #fa4e4e;
   }
 
 
@@ -151,6 +155,9 @@ li {
 
 
 /********** FOOTER **********/
+/* footer{
+    background-color: #D5D8B5;
+} */
 
 .texto_redes{
     text-align: center;
@@ -205,16 +212,61 @@ li {
     color: white;
 }
 
-.contactanos{
-    font-size: 22px;
+form{
     padding: 60px 70px;
-    background-color: rgb(248, 224, 192);
     background: url(./../images/bariloche5.jpg) no-repeat center fixed;
-    /*background-size: Cambia el tamaño de la imagen para adaptarse a toda la caja */
-	background-size: cover;
+    background-size: cover;
     font-weight: bold;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+label{
+	font-size: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 18px;
+	padding: 3px;
+	/*margin-right: 5px;*/
+	margin-bottom: 20px;
+	/*text-align: left;*/
+}
+
+input{
+    margin: 5px;
+	padding: 3px;
+	font-size: 15px;
+    border-radius: 8px;
+	border-width: 1px;
+}
+
+#dia, #anio {
+	width: 50px;
+}
+.incompleto{
+	border-color: #FF0000;
+    border-width: 3px;
+}
+
+select{
+	border-radius: 8px;
+	border-width: 1px;
+	margin: 10px;
+	padding: 3px;
+	font-size: 15px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 18px;
+}
+
+button{
+    height: 45px;
+    line-height: 45px;
+    width: 20%;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .ingreso_informacion{
