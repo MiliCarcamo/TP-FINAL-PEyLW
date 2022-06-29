@@ -257,7 +257,7 @@ select{
 	line-height: 18px;
 }
 
-button{
+.boton_enviar{
     height: 45px;
     line-height: 45px;
     width: 20%;
