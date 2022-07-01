@@ -155,9 +155,9 @@ li {
 
 
 /********** FOOTER **********/
-/* footer{
-    background-color: #D5D8B5;
-} */
+footer{
+    background-color: #d1b9af;
+}
 
 .texto_redes{
     text-align: center;
@@ -275,8 +275,18 @@ select{
 
 
 /************* Seccion pages Actividades *************/
+.texto_actividades{
+    text-align:justify ;
+    margin: 10px 180px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
 
-
+.fotos_actividades{
+    margin: 10px 250px;
+    width: 400px;
+    height: 400px;
+}
 
 
 

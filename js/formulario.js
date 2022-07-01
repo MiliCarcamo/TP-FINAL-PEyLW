@@ -9,6 +9,11 @@ function verificarDatos(event){
 	var anio2 = document.getElementById('anio2');
 	var mes2 = document.getElementById('mes2');
     nombre.className = "";
+	apellido.className = "";
+	mes1.className = "";
+	mes2.className = "";
+	dia1.className = "";
+	dia1.className = "";
     anio1.className = "";
     anio2.className = "";
 
@@ -17,53 +22,53 @@ function verificarDatos(event){
 
     if (!nombre.value || !validarNombre(nombre)) {
         validez = false;
-        marcarError(nombre, "nombre incompleto");
+        marcaError(nombre, "nombre incompleto");
     }
     
     if (!apellido.value || !validarNombre(apellido)) {
         validez = false;
-        marcarError(apellido, "apellido incompleto");
+        marcaError(apellido, "apellido incompleto");
     }
     
     if (!email.value || !validarEmail(email)) {
         validez = false;
-        marcarError(email, "email incompleto o invalido");
+        marcaError(email, "email incompleto o invalido");
     }
 
     if (!anio1.value || !validarAnio1(anio1)) {
 		validez = false;
 		validezFecha = false;
-		marcarError(anio1, "año incompleto o invalido");
+		marcaError(anio1, "año incompleto o invalido");
 	}
 
     if (!anio2.value || !validarAnio2(anio2)) {
 		validez = false;
 		validezFecha = false;
-		marcarError(anio2, "año incompleto o invalido");
+		marcaError(anio2, "año incompleto o invalido");
 	}
 
     if (!mes1.value || !validarMes1(mes1)) {
 		validez = false;
 		validezFecha = false;
-		marcarError(mes1, "mes incompleto o invalido");
+		marcaError(mes1, "mes incompleto o invalido");
 	}
 
     if (!mes2.value || !validarMes2(mes2)) {
 		validez = false;
 		validezFecha = false;
-		marcarError(mes2, "mes incompleto o invalido");
+		marcaError(mes2, "mes incompleto o invalido");
 	}
 
     if (!dia1.value || !validarDia1(dia1)) {
 		validez = false;
 		validezFecha = false;
-		marcarError(dia1, "día incompleto o invalido");
+		marcaError(dia1, "día incompleto o invalido");
 	}
 
     if (!dia2.value || !validarDia2(dia2)) {
 		validez = false;
 		validezFecha = false;
-		marcarError(dia2, "día incompleto o invalido");
+		marcaError(dia2, "día incompleto o invalido");
 	}
 
     if (validezFecha && !validarFecha1(dia1,mes1,anio1)) {
@@ -85,7 +90,6 @@ function verificarDatos(event){
     if (validez) {
 		var respuesta = document.getElementById('respuesta');
 		respuesta.innerHTML = "Su informacion fue registrada correctamente";
-		respuesta.className = "registrarse";
 		document.getElementById('form').reset();
 	}
 	event.preventDefault();
@@ -93,7 +97,7 @@ function verificarDatos(event){
 }
 
 
-function marcarError(campo, txt){
+function marcaError(campo, txt){
     alert(txt);
     campo.className = "incompleto";
 }

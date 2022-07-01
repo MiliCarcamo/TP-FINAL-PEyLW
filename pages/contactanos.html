@@ -36,14 +36,14 @@
                 Contactanos
             </div><br>
             <label>Nombre</label>
-            <input type="text" name="Nombre" id="nombre" class="ingreso_informacion"><br><br>
+            <input type="text" name="Nombre" id="nombre" class="ingreso_informacion" class=""><br><br>
     
             <label>Apellido</label>
-            <input type="text" name="Apellido" id="apellido" class="ingreso_informacion"><br><br>
+            <input type="text" name="Apellido" id="apellido" class="ingreso_informacion" class=""><br><br>
         
             <label >Fecha de Ingreso:</label><br>
             <label> Dia:</label> 
-            <input type="number" id="dia1" class="ingreso_informacion">
+            <input type="number" id="dia1" class="ingreso_informacion" class="">
             <label>mes: </label>
             <select id="mes1" class="ingreso_informacion">
                 <option value="mes">Mes</option>
@@ -60,10 +60,12 @@
                 <option value="noviembre">noviembre</option>
                 <option value="diciembre">diciembre</option>
             </select>
-            <label>año</label><input type="number" id="anio1" class="ingreso_informacion" ><br><br>
+            <label>año</label>
+            <input type="number" id="anio1" class="ingreso_informacion" class=""><br><br>
         
             <label >Fecha de Salida:</label><br>
-            <label> Dia:</label> <input type="number" id="dia2" class="ingreso_informacion">
+            <label> Dia:</label> 
+            <input type="number" id="dia2" class="ingreso_informacion" class="">
             <label>mes: </label>
             <select id="mes2" class="ingreso_informacion">
                 <option value="mes">Mes</option>
@@ -80,69 +82,25 @@
                 <option value="noviembre">noviembre</option>
                 <option value="diciembre">diciembre</option>
             </select>
-            <label>año</label><input type="number" id="anio2" class="ingreso_informacion" ><br><br>
+            <label>año</label>
+            <input type="number" id="anio2" class="ingreso_informacion" class=""><br><br>
         
-            <label>Email</label> <input type="email" name="email" id="email" class="ingreso_informacion"> <br><br>
+            <label>Email</label> 
+            <input type="email" name="email" id="email" class="ingreso_informacion" class=""> <br><br>
     
             <button id="boton_enviar" type="submit" onclick="verificarDatos(event)" class="boton_enviar">ENVIAR</button>
-    
+            <div id="respuesta"></div>
         </form>
     </main>
-    
-    
-    
-    
-    <!-- <main class="contactanos">
-        <form action="">
-            <div>
-                <div class="titulo_contactanos">
-                    Contactanos. <br><br>
-                </div>
-                
-                Nombre y Apellido:
-                <input type="text" id="nombreApellido" name="nombreApellido"  placeholder="Nombre y Apellido" class="ingreso_informacion">
-            </div><br>
-            <div>
-                Total de personas que se van a hospedar:
-                <input type="number" name="cantPersonas" min="1" placeholder="Cantidad de personas" class="ingreso_informacion">
-            </div><br>
-            <div>
-                Fecha de ingreso:
-                <input type="date" name="fechaIngreso" placeholder="Escriba Aqui" class="ingreso_informacion">
-            </div><br>
-            <div>
-                Fecha de salida:
-                <input type="date" name="fechaSalida" placeholder="Escriba Aqui" class="ingreso_informacion">
-            </div><br>
-            <div>
-                Seleccione el medio de contacto, por el cual quiere recibir la informacion:
-                <select name="Medio de contacto" id="medioContacto" class="ingreso_informacion">
-                    <option >Seleccione</option>
-                    <option >Email</option>
-                    <option >WhatsApp</option>
-                </select>
-            </div><br>
-            <div>
-                Comentario o Mensaje: <br>
-                <textarea name="mensaje" id="" cols="40" rows="10" class="ingreso_informacion" placeholder="Escribe un mensaje o comentario"></textarea>
-            </div> <br>
-            <div>
-                <input type="submit" onclick="return enviarFormulario();" value="Enviar" class="ingreso_informacion">
-                <input type="reset" value="Borrar" class="ingreso_informacion">
-            </div>
-        </form>
-        <div id="error"></div>
-
-    </main> -->
-
+   
     <!--Aca va la informacion del pie de pagina-->
     <footer class="pie_pagina">
-        <br><br><br><br>
+        <br><br>
         <div class="iconos_redes">
             <a href="https://facebook.com"> <img src="../images/iconos-redes/facebook.png" alt="Icono de Facebook" class="tamanio_iconos_redes"></a>
             <a href="https://instagram.com"> <img src="../images/iconos-redes/instagram.png" alt="Icono de Instagram" class="tamanio_iconos_redes"></a>
             <a href="https://twitter.com"> <img src="../images/iconos-redes/twitter.png" alt="Icono de Twitter" class="tamanio_iconos_redes"></a>
-        </div><br><br><br><br>
+        </div><br><br>
         
     </footer>
     

@@ -10,7 +10,7 @@ const obtenerTiempoRestante = (plazo) => {
       minutos = ("0" + Math.floor((tiempoRestante / 60) % 60)).slice(-2),
       //Lo convierto en hs
       horas = ("0" + Math.floor((tiempoRestante / 3600) % 24)).slice(-2),
-      //Lo convierto en fias
+      //Lo convierto en Dias
       dias = Math.floor(tiempoRestante / (3600 * 24));
   
       //Retorno un objeto con los siguientes valores
