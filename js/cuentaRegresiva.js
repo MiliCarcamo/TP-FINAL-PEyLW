@@ -23,7 +23,7 @@ const obtenerTiempoRestante = (plazo) => {
     };
   };
   
-  // creo una nueva funcion que recibe el plazo, un elemnto html y un msj final que se va a inprimir cuando termine
+  // creo una nueva funcion que recibe el plazo, un elemnto html y un msj final que se va a imprimir cuando termine
   const cuentaRegresiva = (plazo, elem, finalMessage) => {
     const el = document.getElementById(elem);
   
