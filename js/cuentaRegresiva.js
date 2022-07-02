@@ -38,5 +38,5 @@ const obtenerTiempoRestante = (plazo) => {
     }, 1000);
   };
   
-  cuentaRegresiva("July 06 2022 00:00:00 UTC-3", "reloj", "¡Oferta Finalizada!");
+  cuentaRegresiva("July 10 2022 00:00:00 UTC-3", "reloj", "¡Oferta Finalizada!");
   

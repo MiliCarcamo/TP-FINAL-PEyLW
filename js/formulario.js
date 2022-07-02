@@ -142,7 +142,7 @@ function validarFecha1(dia, mes, anio) {
 		validez = false;
 	} else if (["diciembre", "octubre", "agosto", "julio", "marzo", "enero"].includes(mes.value) && dia.value > 31) {
 		validez = false;
-	} else if (mes.value=="febrero" && dia.value > 28 && !((anio.value % 4 == 0 && anio.value % 100 != 0) || anio.value % 400 == 0)) {
+	} else if (mes.value=="febrero" && dia.value > 28 && !((anio.value % 4 == 0) || (anio.value % 100 == 0 && anio.value % 400 == 0))) { 
 	 	validez = false;
 	}
 	return validez;
@@ -155,7 +155,7 @@ function validarFecha2(dia, mes, anio) {
 		validez = false;
 	} else if (["diciembre", "octubre", "agosto", "julio", "marzo", "enero"].includes(mes.value) && dia.value > 31) {
 		validez = false;
-	} else if (mes.value=="febrero" && dia.value > 28 && !((anio.value % 4 == 0 && anio.value % 100 != 0) || anio.value % 400 == 0)) {
+	} else if (mes.value=="febrero" && dia.value > 28 && !((anio.value % 4 == 0) || (anio.value % 100 == 0 && anio.value % 400 == 0))) { 
 	 	validez = false;
 	}
 	return validez;
